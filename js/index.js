@@ -2,7 +2,7 @@ let shopModule = (function () {
     let ary = [];
     let getData = function getData() {
         let xhr = new XMLHttpRequest;
-        xhr.open('get', '../json/product.json',false);
+        xhr.open('get', './json/product.json',false);
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
                 let data = JSON.parse(xhr.response);
